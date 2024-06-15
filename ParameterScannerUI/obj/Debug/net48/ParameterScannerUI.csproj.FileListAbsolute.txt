@@ -1,5 +1,0 @@
-D:\Repos\ParameterScanner\ParameterScannerUI\obj\Debug\net48\ParameterScannerUI.csproj.AssemblyReference.cache
-D:\Repos\ParameterScanner\ParameterScannerUI\obj\Debug\net48\MainWindow.g.cs
-D:\Repos\ParameterScanner\ParameterScannerUI\obj\Debug\net48\App.g.cs
-D:\Repos\ParameterScanner\ParameterScannerUI\obj\Debug\net48\ParameterScannerUI_MarkupCompile.cache
-D:\Repos\ParameterScanner\ParameterScannerUI\obj\Debug\net48\ParameterScannerUI_MarkupCompile.lref
