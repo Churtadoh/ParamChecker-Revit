@@ -1,0 +1,34 @@
+# Ignore Visual Studio temporary files, build results, and
+# folder-based project configuration
+.vs/
+*.vsidx
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (Mono Auto Generated)
+mono_crash.*
+
+# Auto Generated VS 2019 folder
+.vscode/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Enable "build/" folder in the NuGet Packages folder since NuGet packages use it for temporary files during packaging
+# This will make sure they are not added to the global gitignore file
+!packages/build/
