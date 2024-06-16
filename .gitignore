@@ -29,6 +29,8 @@ bld/
 [Bb]in/
 [Oo]bj/
 
+.vs/
+
 # Enable "build/" folder in the NuGet Packages folder since NuGet packages use it for temporary files during packaging
 # This will make sure they are not added to the global gitignore file
 !packages/build/
