@@ -28,7 +28,7 @@ namespace ParameterScanner
 
             button.ToolTip = "Hello there";
 
-            BitmapImage iconImage = new BitmapImage(new Uri("pack://application:,,,/ParameterScanner;component/Resources/parameter.png"));
+            BitmapImage iconImage = new BitmapImage(new Uri("pack://application:,,,/ParameterScanner;component/Resources/parametersmall.png"));
 
             button.LargeImage = iconImage;
 

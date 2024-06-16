@@ -28,15 +28,80 @@ namespace ParameterScanner
             _doc = doc;
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e) 
+        private void IsolateViewClick(object sender, RoutedEventArgs e) 
         {
-            
+            SearchInput searchInput = new SearchInput()
+            {
+                ParameterName = ParameterName.Text,
+                ParameterValue = ParameterValue.Text,
+            };
+
+            List<Element> elements = FindElements(_doc, searchInput);
+
+            if(elements != null && elements.Count > 0)
+            {
+                using (Transaction tx = new Transaction(_doc, "Isolate Elements"))
+                {
+                    tx.Start();
+                    _doc.ActiveView.IsolateElementsTemporary(elements.Select(ele => ele.Id).ToList());
+                    tx.Commit();
+                }
+            }
+            else
+            {
+                MessageBox.Show("No elements found.");
+            }
         }
 
-        private void Create_Click(object sender, RoutedEventArgs e)
+        private void SelectClick(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show($"{ParameterName.Text} - {ParameterValue.Text}");
         }
 
+        public class SearchInput
+        {
+            public string ParameterName { get; set; }
+            public string ParameterValue { get; set; }
+        }
+
+        public static List<Element> FindElements(Document doc, SearchInput input)
+        {
+            try
+            {
+                List<Element> elements = null;
+
+                FilteredElementCollector collector = new FilteredElementCollector(doc).WhereElementIsNotElementType();
+
+                foreach (Element element in collector)
+                {
+                    Parameter param = element.LookupParameter(input.ParameterName);
+
+                    if (param != null)
+                    {
+                        if (elements == null)
+                        {
+                            elements = new List<Element>();
+                        }
+
+                        if (string.IsNullOrEmpty(input.ParameterValue))
+                        {
+
+                            elements.Add(element);
+
+                        }
+                        else if (param.AsString() == input.ParameterValue)
+                        {
+                            elements.Add(element);
+                        }
+                    }
+                }
+
+                return elements;
+
+            } catch
+            {
+                throw;
+            }
+        }
     }
 }

@@ -78,7 +78,7 @@
                     <TextBlock Grid.Row="0" Text="Parameter Name" Margin="15" Foreground="#0f293b" FontWeight="Bold" FontSize="18" FontStyle="Italic"/>
                     <Border Grid.Row="0" Height="2" Margin="15" VerticalAlignment="Bottom" Background="#f86369" Width="90" HorizontalAlignment="Left"/>
                     <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="Parameter Value Parameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter Value" Margin="15,0" Foreground="Gray" FontSize="11"/>
-                    <TextBox Grid.Row="2" Margin="15"/>
+                    <TextBox Grid.Row="2" x:Name="ParameterName"  Margin="15"/>
                 </Grid>
             </Border>
             <Border Grid.Column="1" Background="White" CornerRadius="8" Margin="15,-30,15,-20">
@@ -98,7 +98,7 @@
                     <TextBlock Grid.Row="0" Text="Parameter Value" Margin="15" Foreground="#0f293b" FontWeight="Bold" FontSize="18" FontStyle="Italic"/>
                     <Border Grid.Row="0" Height="2" Margin="15" VerticalAlignment="Bottom" Background="#00a99d" Width="90" HorizontalAlignment="Left"/>
                     <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="Parameter Value Parameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter Value" Margin="15,0" Foreground="Gray" FontSize="11"/>
-                    <TextBox Grid.Row="2" Margin="15"/>
+                    <TextBox Grid.Row="2" x:Name="ParameterValue" Margin="15"/>
                 </Grid>
             </Border>
 
@@ -111,10 +111,14 @@
             </Grid.ColumnDefinitions>
 
             <Button Grid.Column="0" Content="Isolate in View" 
-                Template="{StaticResource RoundedButton}"
+                    Template="{StaticResource RoundedButton}"
+                    x:Name="IsolateView"
+                    Click="IsolateViewClick"
                 />
             <Button Grid.Column="1" Content="Select" 
-                Template="{StaticResource RoundedButton}" 
+                    Template="{StaticResource RoundedButton}"
+                    x:Name="Select"
+                    Click="SelectClick"
                 />
         </Grid>
     </Grid>

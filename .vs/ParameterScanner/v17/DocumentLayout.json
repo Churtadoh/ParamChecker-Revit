@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Repos\\ParameterScanner\\",
+  "WorkspaceRootPath": "D:\\Repos\\ParamChecker-Revit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{585D46E7-2BEC-4B0B-8544-C29EE01DA3C8}|ParameterScanner\\ParameterScanner.csproj|d:\\repos\\parameterscanner\\parameterscanner\\ui.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{585D46E7-2BEC-4B0B-8544-C29EE01DA3C8}|ParameterScanner\\ParameterScanner.csproj|solutionrelative:parameterscanner\\ui.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{585D46E7-2BEC-4B0B-8544-C29EE01DA3C8}|ParameterScanner\\ParameterScanner.csproj|d:\\repos\\parameterscanner\\parameterscanner\\ui.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{585D46E7-2BEC-4B0B-8544-C29EE01DA3C8}|ParameterScanner\\ParameterScanner.csproj|D:\\Repos\\ParamChecker-Revit\\parameterscanner\\ui.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{585D46E7-2BEC-4B0B-8544-C29EE01DA3C8}|ParameterScanner\\ParameterScanner.csproj|solutionrelative:parameterscanner\\ui.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{585D46E7-2BEC-4B0B-8544-C29EE01DA3C8}|ParameterScanner\\ParameterScanner.csproj|d:\\repos\\parameterscanner\\parameterscanner\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{585D46E7-2BEC-4B0B-8544-C29EE01DA3C8}|ParameterScanner\\ParameterScanner.csproj|d:\\repos\\paramchecker-revit\\parameterscanner\\ui.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{585D46E7-2BEC-4B0B-8544-C29EE01DA3C8}|ParameterScanner\\ParameterScanner.csproj|solutionrelative:parameterscanner\\ui.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{585D46E7-2BEC-4B0B-8544-C29EE01DA3C8}|ParameterScanner\\ParameterScanner.csproj|D:\\Repos\\ParamChecker-Revit\\parameterscanner\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{585D46E7-2BEC-4B0B-8544-C29EE01DA3C8}|ParameterScanner\\ParameterScanner.csproj|solutionrelative:parameterscanner\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{585D46E7-2BEC-4B0B-8544-C29EE01DA3C8}|ParameterScanner\\ParameterScanner.csproj|d:\\repos\\parameterscanner\\parameterscanner\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{585D46E7-2BEC-4B0B-8544-C29EE01DA3C8}|ParameterScanner\\ParameterScanner.csproj|D:\\Repos\\ParamChecker-Revit\\parameterscanner\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{585D46E7-2BEC-4B0B-8544-C29EE01DA3C8}|ParameterScanner\\ParameterScanner.csproj|solutionrelative:parameterscanner\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -55,35 +55,35 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "UI.xaml",
+              "DocumentMoniker": "D:\\Repos\\ParamChecker-Revit\\ParameterScanner\\UI.xaml",
+              "RelativeDocumentMoniker": "ParameterScanner\\UI.xaml",
+              "ToolTip": "D:\\Repos\\ParamChecker-Revit\\ParameterScanner\\UI.xaml",
+              "RelativeToolTip": "ParameterScanner\\UI.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-16T01:12:37.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "UI.xaml.cs",
-              "DocumentMoniker": "D:\\Repos\\ParameterScanner\\ParameterScanner\\UI.xaml.cs",
+              "DocumentMoniker": "D:\\Repos\\ParamChecker-Revit\\ParameterScanner\\UI.xaml.cs",
               "RelativeDocumentMoniker": "ParameterScanner\\UI.xaml.cs",
-              "ToolTip": "D:\\Repos\\ParameterScanner\\ParameterScanner\\UI.xaml.cs",
+              "ToolTip": "D:\\Repos\\ParamChecker-Revit\\ParameterScanner\\UI.xaml.cs",
               "RelativeToolTip": "ParameterScanner\\UI.xaml.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAmwCUAAAAAAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowDkAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T23:38:47.232Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UI.xaml",
-              "DocumentMoniker": "D:\\Repos\\ParameterScanner\\ParameterScanner\\UI.xaml",
-              "RelativeDocumentMoniker": "ParameterScanner\\UI.xaml",
-              "ToolTip": "D:\\Repos\\ParameterScanner\\ParameterScanner\\UI.xaml",
-              "RelativeToolTip": "ParameterScanner\\UI.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-12T23:31:48.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Command.cs",
-              "DocumentMoniker": "D:\\Repos\\ParameterScanner\\ParameterScanner\\Command.cs",
+              "DocumentMoniker": "D:\\Repos\\ParamChecker-Revit\\ParameterScanner\\Command.cs",
               "RelativeDocumentMoniker": "ParameterScanner\\Command.cs",
-              "ToolTip": "D:\\Repos\\ParameterScanner\\ParameterScanner\\Command.cs",
+              "ToolTip": "D:\\Repos\\ParamChecker-Revit\\ParameterScanner\\Command.cs",
               "RelativeToolTip": "ParameterScanner\\Command.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAADwvw0AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -94,11 +94,11 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Main.cs",
-              "DocumentMoniker": "D:\\Repos\\ParameterScanner\\ParameterScanner\\Main.cs",
+              "DocumentMoniker": "D:\\Repos\\ParamChecker-Revit\\ParameterScanner\\Main.cs",
               "RelativeDocumentMoniker": "ParameterScanner\\Main.cs",
-              "ToolTip": "D:\\Repos\\ParameterScanner\\ParameterScanner\\Main.cs",
+              "ToolTip": "D:\\Repos\\ParamChecker-Revit\\ParameterScanner\\Main.cs",
               "RelativeToolTip": "ParameterScanner\\Main.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAA1wBQAAABSAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwB4AAACPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T22:58:39.159Z",
               "EditorCaption": ""
