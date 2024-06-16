@@ -28,18 +28,11 @@ namespace ParameterScanner
 
             button.ToolTip = "Hello there";
 
-            string iconPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Resources", "parameter.png");
-
-            Uri icon = new Uri(iconPath, UriKind.Absolute);
-
-            BitmapImage iconImage = new BitmapImage(icon);
+            BitmapImage iconImage = new BitmapImage(new Uri("pack://application:,,,/ParameterScanner;component/Resources/parameter.png"));
 
             button.LargeImage = iconImage;
 
-            //
-
             return Result.Succeeded;
-
 
         }
 

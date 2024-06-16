@@ -5,15 +5,117 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ParameterScanner"
              mc:Ignorable="d" 
-             Width="365" Height="265">
+             Width="600" Height="500"
+             WindowStyle="ThreeDBorderWindow"
+             Title="Parameter Scanner"
+        >
+    <Window.Resources>
+        <ControlTemplate x:Key="RoundedButton" TargetType="Button">
+            <Border x:Name="ButtonBorder"
+                    Background="#5e42c9"
+                    Height="40"
+                    Width="120"
+                    CornerRadius="15"
+                    Cursor="Hand"
+                    >
+                <TextBlock Text="{TemplateBinding Content}"
+                   FontWeight="SemiBold"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter TargetName="ButtonBorder" Property="Background" Value="#744AC0"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Window.Resources>
     <Grid>
-    <Grid.RowDefinitions>
-            <RowDefinition Height="130"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="0" Content="Select TitleBlock" Foreground="Black" Margin="35,14,230,86"></Label>
-        <ComboBox Grid.Row="0" x:Name="title_Blocks" Margin="19,49,19,43"/>
-        <Button Grid.Row="1" x:Name="Create" Content="Create HERE" Margin="78,30,79,30" Click="Create_Click" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="#e5ebeb"
+              Grid.ColumnSpan="3"
+              Grid.RowSpan="3"
+              />
+        <Grid Background="#0f293b"
+              Grid.ColumnSpan="3"/>
+
+        <Image Grid.Row="0" Grid.Column="1"  Source="./Resources/parameter.png" Grid.ColumnSpan="2" Grid.RowSpan="2" Height="125"/>
+        <TextBlock Text="Created By: Camilo Hurtado" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="5" FontStyle="Italic"/>
+
+        <Grid Grid.Row="2" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Border Background="White" CornerRadius="8" Margin="15,-30,15,-20">
+                <Border.Effect>
+                    <DropShadowEffect Color="Black"
+                          ShadowDepth="5"
+                          BlurRadius="4"
+                          Opacity=".15"/>
+                </Border.Effect>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Text="Parameter Name" Margin="15" Foreground="#0f293b" FontWeight="Bold" FontSize="18" FontStyle="Italic"/>
+                    <Border Grid.Row="0" Height="2" Margin="15" VerticalAlignment="Bottom" Background="#f86369" Width="90" HorizontalAlignment="Left"/>
+                    <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="Parameter Value Parameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter Value" Margin="15,0" Foreground="Gray" FontSize="11"/>
+                    <TextBox Grid.Row="2" Margin="15"/>
+                </Grid>
+            </Border>
+            <Border Grid.Column="1" Background="White" CornerRadius="8" Margin="15,-30,15,-20">
+                <Border.Effect>
+                    <DropShadowEffect Color="Black"
+                          ShadowDepth="5"
+                          BlurRadius="4"
+                          Opacity=".15"/>
+                </Border.Effect>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Text="Parameter Value" Margin="15" Foreground="#0f293b" FontWeight="Bold" FontSize="18" FontStyle="Italic"/>
+                    <Border Grid.Row="0" Height="2" Margin="15" VerticalAlignment="Bottom" Background="#00a99d" Width="90" HorizontalAlignment="Left"/>
+                    <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="Parameter Value Parameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter ValueParameter Value" Margin="15,0" Foreground="Gray" FontSize="11"/>
+                    <TextBox Grid.Row="2" Margin="15"/>
+                </Grid>
+            </Border>
+
+        </Grid>
+
+        <Grid Grid.Row="3" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Content="Isolate in View" 
+                Template="{StaticResource RoundedButton}"
+                />
+            <Button Grid.Column="1" Content="Select" 
+                Template="{StaticResource RoundedButton}" 
+                />
+        </Grid>
     </Grid>
 </Window>
