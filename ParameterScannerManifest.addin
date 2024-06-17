@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+ <AddIn Type="Application">
+       <Name>ParameterScanner</Name>
+       <FullClassName>ParameterScanner.Main</FullClassName>
+       <VisibilityMode>AlwaysVisible</VisibilityMode>
+       <Assembly>ParameterScanner.dll</Assembly>
+       <AddInId>6B1B07FA-32AA-44C1-94D8-A29B743E1336</AddInId>
+    <VendorId>CHH</VendorId>
+    <VendorDescription>Camilo Hurtado</VendorDescription>
+ </AddIn>
+</RevitAddIns>
+

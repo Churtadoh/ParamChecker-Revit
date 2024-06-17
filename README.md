@@ -12,7 +12,9 @@ This is an add-in for Autodesk Revit that allows users to search for elements ba
 1. Clone this repository.
 2. Open the solution in Visual Studio.
 3. Build the solution to generate the add-in DLL.
-4. Copy the generated DLL and necessary dependencies to the Revit add-ins folder.
+4. Copy the generated DLL (ParameterScanner.dll) and the add-in manifest file (ParameterScannerManifest) to the Revit add-ins folder.
+
+Alternative method, you can simply download the ParameterScanner.zip zip file and extract it's contents into the Revit add-ins folder.
 
 ## Usage
 
