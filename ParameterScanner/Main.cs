@@ -18,22 +18,18 @@ namespace ParameterScanner
     {
         public Result OnStartup(UIControlledApplication application)
         {
+
             RibbonPanel ribbonPanel = application.CreateRibbonPanel("Parameters");
 
-            string thisAssemblyPath = Assembly.GetExecutingAssembly().Location;
-
-            PushButtonData buttonData = new PushButtonData("cmdParameterScanner", "Parameter Scanner", thisAssemblyPath, "ParameterScanner.Command");
+            string assemblyPath = Assembly.GetExecutingAssembly().Location;
+            PushButtonData buttonData = new PushButtonData("cmdParameterScanner", "Parameter Scanner", assemblyPath, "ParameterScanner.Command");
 
             PushButton button = (PushButton)ribbonPanel.AddItem(buttonData);
-
-            button.ToolTip = "Hello there";
-
+            button.ToolTip = "Parameter Scanner - Only accesible for Floor Plans, Reflected Ceiling Plans and 3D Views";
             BitmapImage iconImage = new BitmapImage(new Uri("pack://application:,,,/ParameterScanner;component/Resources/parametersmall.png"));
-
             button.LargeImage = iconImage;
 
             return Result.Succeeded;
-
         }
 
         public Result OnShutdown(UIControlledApplication application)

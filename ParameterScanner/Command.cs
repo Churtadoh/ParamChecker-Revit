@@ -21,7 +21,23 @@ namespace ParameterScanner
                 UIApplication application = commandData.Application;
                 Document doc = application.ActiveUIDocument.Document;
 
-                var mainWindow = new UI(doc);
+                //Add more views if neccessary
+                List<ViewType> allowedViews = new List<ViewType>
+                {
+                    ViewType.FloorPlan,
+                    ViewType.CeilingPlan,
+                    ViewType.ThreeD
+                };
+
+                View currentView = doc.ActiveView;
+
+                if (currentView == null || !allowedViews.Contains(currentView.ViewType)) 
+                {
+                    MessageBox.Show("The Parameter Scanner is only available for Floor Plans, Reflected Ceiling Plans, or 3D Views.", "Warning", MessageBoxButton.OK,MessageBoxImage.Warning);
+                    return Result.Cancelled;
+                }
+
+                UI mainWindow = new UI(doc);
                 mainWindow.ShowDialog();
                 return Result.Succeeded;
             }
