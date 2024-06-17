@@ -16,6 +16,12 @@ This is an add-in for Autodesk Revit that allows users to search for elements ba
 
 Alternative method, you can simply download the ParameterScanner.zip zip file and extract it's contents into the Revit add-ins folder.
 
+## Note: If you use this method your pc may bloc the .dll file so before you open revit follow these steps
+
+1. Right click on the ParameterScanner.dll file.
+2. In the genral tab go to the bottom part of window and find the security warning that has blocked this file.
+3. Click the checkbox that says to "Unblock" file.
+
 ## Usage
 
 1. Open Revit.
